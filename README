@@ -1,0 +1,18 @@
+# tri-gram tool
+
+# files:
+    trigram_tool/
+        |-- REDAME.md
+        |-- __init__.py
+        |-- trigram.py         # API class
+        |-- model/
+             |-- trigram.pkl   # model file
+             |-- vocab.txt     # vocabulary
+
+
+# API function:
+    log_probability_sentence(sentence)
+
+    Return the log-probability of the given sentence based on tri-gram language model.
+    Modefied Kneser-Ney smoothing method is used. 
+    (https://people.eecs.berkeley.edu/~klein/cs294-5/chen_goodman.pdf)
